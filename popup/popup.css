@@ -1,0 +1,40 @@
+html {
+    width: 800px; /* max: 800px */
+    height: 600px; /* max: 600px */
+}
+
+body {
+    background-color: #222;
+    color: #b0a99f;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+}
+
+table {
+border: 1px solid black;
+padding: 0px;
+}
+
+th { background: #333; border-bottom: 1px solid black; }
+
+/* IDs added to th element */
+/*#Author { width: 115px; }
+#Title { width: 200px; }
+#Series { width: 160px; }*/
+#Sale { width: 40px; }
+/*#Price { width: 60px; }
+#Pre-Order { width: 70px; }
+#Date { width: 50px; }*/
+
+/* IDs added to tr element */
+#rowPreorder { background: #333; }
+#rowSale { color: red; }
+
+td { 
+border-bottom: 1px solid black; 
+padding-top: 1px;
+padding-bottom: 1px;
+padding-left: 5px;
+padding-right: 5px;
+}

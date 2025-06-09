@@ -1,0 +1,30 @@
+{
+    // Comments are accepted in the manifest, even though it is JSON.
+    "manifest_version": 3,
+    "name": "Kobo Price Comparer and Wishlist",
+    "description": "",
+    "version": "0.0.1",
+  "icons": {
+    "16": "img/xed_16.png",
+    "48": "img/xed_48.png",
+    "128": "img/xed_128.png"
+  },
+    "action": {
+        "default_title": "Kobo Wishlist",
+        "default_popup": "popup/popup.html"
+    },
+    "permissions": ["storage"],
+    "host_permissions": [
+        "*://*/*"
+    ],
+    "background": {
+        "service_worker": "service-worker.js"
+    },
+    "content_scripts": [{
+        "js": ["foreground.js"],
+      "matches": [
+        "http://*.kobo.com/us/en/account/wishlist*",
+        "https://*.kobo.com/us/en/account/wishlist*"
+      ]
+    }]
+}
